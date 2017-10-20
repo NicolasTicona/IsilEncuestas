@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Bienvenido</h2>
+
+  <div class="cont-profiles">
+
+    <div class="profile" *ngFor="let user of docenteData" >
+      <div class="cont-image"><img src="../../assets/user.png" width="40px"></div>
+      <div class="cont-info">
+        <h3 class="nombre" >{{user.nombre}} | {{user.email}}</h3>
+        <a href="" routerLink="/perfil/{{user.id}}">Ver Perfil</a>
+      </div>
+    </div>
+
+  </div>
+</div>

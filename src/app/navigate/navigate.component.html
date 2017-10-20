@@ -1,0 +1,18 @@
+<header>
+  
+    <nav>
+
+      <div class="cont-image">
+        <img src="../../assets/isil.png">
+      </div>
+
+      <div class="cont-links">
+        <a routerLink="/inicio" *ngIf="isAuth()" >Inicio</a>
+        <a routerLink="/perfil" *ngIf="isAuth()" >Perfil</a>
+        <a routerLink="/login" *ngIf="!isAuth()" >Iniciar Sesion</a>
+        <a *ngIf="isAuth()" (click)="onLogout()">Cerrar Sesion</a>        
+      </div>
+  
+    </nav>
+  
+  </header>

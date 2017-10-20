@@ -1,0 +1,32 @@
+header{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #242424;
+}
+
+img{
+    width: 75%;
+}
+
+header nav{
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .cont-links a{
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #242424;    
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+header nav .cont-links a:hover{
+    color: #5c5c5c; 
+}

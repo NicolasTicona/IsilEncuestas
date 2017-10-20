@@ -1,0 +1,56 @@
+.container{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;
+}
+
+form{
+    width: 40%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+label{ display: block; font-weight: bold; margin-bottom: 5px; }
+
+form input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgba(32, 32, 32, 0.295);
+}
+
+.btn-submit{ text-align: center; margin-bottom: 20px;}
+
+.btn{
+    border: 2px solid #202020;
+    background: #202020;
+    color: #fff;
+    padding: 15px 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    transition: all .3s ease;
+}
+
+/* ESTADOS */
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+.btn:enabled{
+    cursor: pointer;
+}
+
+input.ng-valid.ng-dirty{
+    border:2px solid #77ff73;
+}
+
+input.ng-invalid.ng-touched{
+    border:2px solid #e73b3b;
+}

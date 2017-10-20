@@ -1,0 +1,49 @@
+.container{
+    width: 100%;
+    padding: 15px;
+}
+
+h2{
+    margin-bottom: 30px;
+    border-bottom: 1px solid #202020;
+    font-size: 35px;
+}
+
+.cont-profiles{
+    width: 40%;
+    margin: auto;
+}
+
+.cont-profiles .profile{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background: rgb(230, 230, 230);
+    border-radius: 0px 3px 10px 0px;
+}
+
+.cont-image{
+    width: 20%;
+    background: #000;
+}
+.cont-image img{
+    width: 100%;
+}
+
+.cont-info{
+    width: 90%;
+    padding:0 10px;
+}
+
+.cont-info .nombre{
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(50, 138, 197);
+    margin-bottom: 20px;
+}
+
+.cont-info a{
+    color: #202020;
+    text-decoration: underline;
+}

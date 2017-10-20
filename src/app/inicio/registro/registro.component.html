@@ -1,0 +1,24 @@
+<div class="container">
+
+  <h2 class="title">Ingesa tus Datos</h2>
+
+  <form [formGroup]="registroForm" (ngSubmit)="onSubmit()" >
+
+    <label>Nombre</label>
+    <input type="text" id="nombre" formControlName="nombre">
+
+    <label>Correo Electrónico</label>
+    <input type="email" id="email" formControlName="email">
+
+    <label>Contraseña</label>
+    <input type="password" id="password" formControlName="password">
+
+    <div class="btn-submit">
+      <button type="submit" class="btn" id="submit" [disabled]="!registroForm.valid" >Registrarme</button>
+    </div>
+    <div class="btn-anonymous">
+      <button class="btn" id="anonymous" (click)="anonymousSesionIn()" >Login Anonimos</button>
+    </div>
+  </form>
+
+</div>

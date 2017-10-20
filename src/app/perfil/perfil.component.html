@@ -1,0 +1,18 @@
+<div class="container">
+
+  <div class="head">
+    <div class="cont-image"><img [src]="userData.foto"></div>
+    <div class="title-name"><h2>{{userData.nombre}}</h2></div>
+  </div>
+
+  <div class="informacion">
+    <label>Edad: </label>
+    <input type="text" [value]="userData.edad" disabled>
+    
+    <label>Correo Electrónico</label>
+    <input type="email" [value]="userData.email" disabled>
+
+    <textarea [value]="userData.descripcion"></textarea>
+  </div>
+
+</div>
