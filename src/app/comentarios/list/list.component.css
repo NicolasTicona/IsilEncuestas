@@ -1,0 +1,54 @@
+.container{
+    width: 100%;
+}
+
+.comentarios{
+    width: 60%;
+    padding: 20px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.comentario{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.comentario .username{
+    width: 100%;
+    background: #46abe6;
+    padding: 10px;
+    border-radius: 6px 2px 0 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comentario .username h3{
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+}
+
+.comentario .username p{
+    text-align: right;
+    color: #fff;
+}
+
+.comentario .descripcion{
+    width: 100%;
+    background: rgb(243, 243, 243);
+    padding: 16px 5px;
+}
+
+.comentario .description p{
+    font-size: 14px;
+    margin: 16px;
+    color: #252525
+}

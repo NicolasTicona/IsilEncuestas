@@ -1,0 +1,13 @@
+<div class="container">
+
+  <div class="comentarios" *ngFor="let ct of comentarios" >
+    <div class="comentario">
+      <div class="username">
+        <h3> {{ct.email}} </h3>
+        <p>{{ct.date | date: 'd/M/y H:m'}}</p>
+      </div>
+      <div class="descripcion"><p> {{ct.comentario}}</p></div>
+    </div>
+  </div>
+
+</div>

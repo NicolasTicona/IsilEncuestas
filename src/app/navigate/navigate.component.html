@@ -7,8 +7,10 @@
       </div>
 
       <div class="cont-links">
-        <a routerLink="/inicio" *ngIf="isAuth()" >Inicio</a>
+        <a routerLink="/" *ngIf="isAuth()" >Inicio</a>
         <a routerLink="/perfil" *ngIf="isAuth()" >Perfil</a>
+        <a routerLink="/comentarios" *ngIf="isAuth()" >Comentarios</a>
+        <a routerLink="/lista" *ngIf="isAuth()" >Lista de Comentarios</a>
         <a routerLink="/login" *ngIf="!isAuth()" >Iniciar Sesion</a>
         <a *ngIf="isAuth()" (click)="onLogout()">Cerrar Sesion</a>        
       </div>

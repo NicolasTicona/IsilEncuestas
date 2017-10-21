@@ -17,6 +17,16 @@ export class AutentificacionService {
     }
   }
 
+  getData(){
+    var user = firebase.auth().currentUser;
+    if(user){
+      return user;
+    }else{
+      return false;
+    }
+  }
+
+
   // Registro Anonimo
   anonymousRecord(){
     firebase.auth().signInAnonymously();

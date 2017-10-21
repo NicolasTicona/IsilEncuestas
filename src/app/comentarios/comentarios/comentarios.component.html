@@ -1,0 +1,14 @@
+<div class="container">
+
+  <form [formGroup]="comentarioForm" (ngSubmit)="onSubmit()" >
+    
+    <div class="cont-coment">
+      <div class="username"><h3>{{user.email}}</h3></div>
+      <textarea formControlName="comentario" placeholder="Deja un comentario..."></textarea>
+    </div>
+
+    <button type="submit">Enviar</button> 
+
+  </form>
+
+</div>

@@ -22,7 +22,6 @@ export class IniciosesionComponent implements OnInit {
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
-      'nombre': ['', Validators.required],
       'email': ['', [Validators.required,Validators.email]],
       'password': ['',[Validators.required]]
       // Validators.pattern('(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))')
@@ -37,7 +36,6 @@ export class IniciosesionComponent implements OnInit {
   
     saveRegistro(){
       let registro = {
-        nombre: this.loginForm.get('nombre').value,
         email: this.loginForm.get('email').value,
         password: this.loginForm.get('password').value
       }
